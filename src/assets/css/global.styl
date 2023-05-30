@@ -1,0 +1,37 @@
+@import "./convert.styl"
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.fold-enter-active, .fold-leave-active {
+  transition: all .5s !important
+}
+.fold-enter, .fold-leave-to {
+  transform translate3d(0,100%,0) !important
+}
+
+
+
+//滴滴插件样式
+.cube-radio-hollow.cube-radio_selected .cube-radio-ui i::before{
+  background-color #28BF62 !important
+}
+.cube-radio-hollow.cube-radio_selected .cube-radio-ui::before{
+  color #28BF62 !important
+}
+.cube-radio-label{
+  font-size convert(17)
+}
+.cube-radio-group[data-horz="true"] {
+  display: flex;
+  padding-left: 0;
+  border-radius: 2px;
+}
+.border-right-1px::after {
+  border-right 0  
+}
+.cube-radio-group[data-horz="true"]::after {
+  border none !important
+}
